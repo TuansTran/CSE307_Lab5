@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+  }
+
+/* header */
+
+header {
+  background-color: white; 
+  display: flex;
+  justify-content:space-between;
+  align-self: center;;
+}
+
+
+header img {
+  width: 10%;
+  height: 120px;
+}
+
+
+header div i {
+  margin-top: 100px;
+}
+
+header div a {
+  text-decoration: none;
+}
+
+ nav {
+  background-color: lightblue;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 13px;
+ }
+
+ nav div ul {
+  list-style: none;
+  display: flex;
+}
+
+nav div li {
+  margin-right: 10px;
+}
+
+nav div li a {
+  text-decoration: wavy;
+  color: black;
+}
+
+nav div input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+nav div input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-left: 3px;
+}
+
+/* body */
+
+div#body {
+  background-color: lightgrey;
+  width: 100%;
+  height: 1350px;
+   
+}
+div#body  article div#left {
+  width: 20%;
+  float: left;
+
+}
+
+div#body  article div#middle {
+  width: 58%;
+  margin: 0 auto;
+}
+
+div#body  article div#middle div#out {
+  width: 90%;
+  height: auto;
+  background-color: lightskyblue;
+  margin-left: 5%;
+}
+
+div#body  article div#middle div#out div fieldset {
+  margin-top: 3%;
+}
+
+div#body  article div#middle div#out div fieldset legend {
+  margin-left: 5%;
+}
+
+div#body  article div#middle div#out button {
+  margin-left: 20%;
+}
+
+div#body  article div#right {
+  width: 20%;
+  float: right;
+}
+
+div#body  article div#left div {
+  border: 3px solid blue;
+  border-radius: 10px;
+  background-color: white;
+}
+
+div#body  article div#left div h2 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+div#body  article div#left div ul li {
+  margin-left: 8%;
+}
+
+div#body  article div#left div ul li a {
+  text-decoration: none;
+}
+
+div#body  article div#middle h2#head {
+  border: 3px solid blue;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+div#body  article div#middle div#out {
+    width: 90%;
+    height: auto;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+
+div#body  article div#right div {
+
+  margin-bottom: 6%;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+
+div#body  article div#right div h2 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+div#body  article div#right div h3 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+div#body  article div#right div select {
+  margin-left: 22%;
+}
+
+
+div#body  article div#right div marquee p img {
+  width: 40%;
+}
+
+
+
+/* footer */
+
+footer {
+  background-color: violet;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 13px;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: black;
+}

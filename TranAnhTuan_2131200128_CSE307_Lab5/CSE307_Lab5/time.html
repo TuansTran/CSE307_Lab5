@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Date and Time
+    </title>
+</head>
+
+<body onload="timeshow()">
+
+    <p>
+        <span id="fulltime"></span> GMT+0700(Indochina Time)
+        <br>
+        <br>
+        <b>
+            Now: <span id="tg"></span>
+            <br>
+        </b>
+        <b>
+            <span style="color: blue;">
+                Today: <span id="ngaythang"></span>
+            </span>
+        </b>
+    </p>
+
+    <script>
+        function timeshow() {
+
+            const t = new Date();
+
+            let h = t.getHours();
+            let m = t.getMinutes();
+            let s = t.getSeconds();
+
+            let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            let weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+            let ngay = t.getDate();
+            let thu = t.getDay();
+            let thang = t.getMonth();
+            let nam = t.getFullYear();
+
+            document.getElementById("fulltime").innerHTML = weekday[thu] + " " + month[thang] + " " + ngay + " " + nam + " " + h + ":" + m + ":" + s;
+            document.getElementById("tg").innerHTML = h + ":" + m + ":" + s;
+            document.getElementById("ngaythang").innerHTML = weekdays[thu] + ", " + (thang + 1) + " " + ngay + ", " + nam;
+        }
+    </script>
+</body>
+
+</html>

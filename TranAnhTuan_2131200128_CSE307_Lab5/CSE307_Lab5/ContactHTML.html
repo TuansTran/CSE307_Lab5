@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <title>Contact</title>
+        <link rel="stylesheet" href="Contact.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script>
+            function loginMed() {
+                const user = document.getElementById('username').value;
+                const mail = document.getElementById('email').value;
+                const message = document.getElementById('mess').value;
+
+                if (!user || !password || !message) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+                document.getElementById('result').innerHTML= user +"<br>"+ mail +"<br>"+ message;
+            }
+        </script>
+
+    </head>
+    <body>
+        <header>
+                <img src="img_Practice3\logoABCbook.png">
+            <div>
+                <i class="fa fa-user" aria-hidden="true"></i><a href="LoginMenu.html">Login</a>
+                <i class="fa fa-registered" aria-hidden="true"></i><a href="Registration.html">Register</a>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="https://www.google.com/search?q=cart&sca_esv=578400713&tbm=isch&source=lnms&sa=X&ved=2ahUKEwigrYKGnKKCAxWislYBHQ5MAcUQ_AUoAXoECAEQAw&biw=1920&bih=963&dpr=1">Cart</a>
+            </div>
+        </header>
+        <nav>            
+            <div class="menu">
+                <div div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                  <a href="Homepage.html" class="btn btn-success rounded-pill" role="button">Homepage</a>
+                  <a href="#link" class="btn btn-success rounded-pill" role="button">Introduction</a>
+                  <a href="ContactHTML.html" class="btn btn-success rounded-pill" role="button">Contact</a>
+                  <div class="button-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-success rounded-pill btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      BOOK BY SUBJECTS
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <a class="dropdown-item" href="#">Information technology</a>
+                      <a class="dropdown-item" href="#">Smartphone</a>
+                      <a class="dropdown-item" href="#">Law</a>
+                      <a class="dropdown-item" href="#">Literature</a>
+                      <a class="dropdown-item" href="#">Science and technology</a>
+                      <a class="dropdown-item" href="#">Agriculture</a>
+                      <a class="dropdown-item" href="#">History of geography</a>
+                      <a class="dropdown-item" href="#">Economics</a>
+                      <a class="dropdown-item" href="#">Listen to the song</a>
+                    </div>
+                  </div>
+                  <div class="button-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-success rounded-pill dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      BOOK BY PUBLISHERS
+                    </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Young Publishers</a>
+                            <a class="dropdown-item" href="#">Statics Publishing House</a>
+                            <a class="dropdown-item" href="#">Bronze needle</a>
+                            <a class="dropdown-item" href="#">National University</a>
+                            <a class="dropdown-item" href="#">Artistic craft culture</a>
+                            <a class="dropdown-item" href="#">Culture</a>
+                            <a class="dropdown-item" href="#">History of geography</a>
+                            <a class="dropdown-item" href="#">Labor - society</a>
+                            <a class="dropdown-item" href="#">Science & Engineering</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" size="60px" name="search-input" id="search-input" placeholder="Enter the title of the book..." required/>
+                <button type="button" class="btn btn-success">Find books</button>
+            </div>
+        </nav>
+        <div id="body">
+            <article>
+                <div id="left">
+                    <div>
+                        <h2>Book by subjects</h2>
+                        <ul>
+                            <li><a href="#">Foreign language</a></li> <br>
+                            <li><a href="#">Information Technology</a></li> <br>
+                            <li><a href="#">Law</a></li><br>
+                            <li><a href="#">Literature</a></li> <br>
+                            <li><a href="#">Science and Technology</a></li> <br>
+                            <li><a href="#">Agriculture</a></li> <br>
+                            <li><a href="#">History of Geography</a></li> <br>
+                            <li><a href="#">Economics</a></li> <br>
+                            <li><a href="#">Listen to the song</a></li>
+                        </ul>
+                    </div>
+                    <br>
+
+                    <div>
+                        <h2>Book by publisher</h2>
+                        <ul>
+                            <li><a href="#">Young publishers</a></li> <br>
+                            <li><a href="#">Statistics Publishing House</a></li> <br>
+                            <li><a href="#">Kim Dong</a></li> <br>
+                            <li><a href="#">National Universities</a></li> <br>
+                            <li><a href="#">Artistic craft culture</a></li> <br>
+                            <li><a href="#">culture</a></li> <br>
+                            <li><a href="#">Labor - Society</a></li> <br>
+                            <li><a href="#">Science - Engineering</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="right">
+                        <div id="marquee">
+                            <h2>
+                                <b>BESTSELLERS</b>
+                            </h2>
+                            <marquee  direction="up" scrollamount="30" scrolldelay="100" onmousemove="stop()" onmouseout="start()">
+                                <p>
+                                    <a href="#"><img src="img_Practice3\EnglishForTech.jpg"><b>English For Tech</b></a>
+                                </p>
+                                <p>
+                                    <a href="#"><img src="img_Practice3\VisualBasic.png"><b>Visual Basic</b></a>
+                                </p>
+                                <p>
+                                    <a href="#"><img src="img_Practice3\Davinci.png"><b>Da Vinci Code</b></a>
+                                </p>
+                                <p>
+                                    <a href="#"><img src="img_Practice3\BARC.png"><b>BARC</b></a>
+                                </p>
+                            </marquee>
+                        </div>
+                        <div>
+                            <h3>
+                                THE WEBSITE LINKS
+                            </h3>
+                            <br>
+                            <select name="linkingpages" id="">
+                                <option value="" disabled selected>--Select the link pages--</option>
+                                <option value=""><a href="https://lib.eiu.edu.vn/">EIU Library</a></option>
+                                <option value=""><a href="https://eiu.edu.vn/">EIU</a></option>
+                            </select>
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <h3>
+                                ACCESS STATISTICS
+                            </h3>
+                            <p>
+                                <b>
+                                    Total accsess: 500
+                                </b>
+                                <br>
+                                <br>
+                                <b>
+                                    Online: 3
+                                </b>
+                            </p>
+                    
+                    </div>  
+                </div>
+                <div id="middle">
+                    <h2 id="head">Contact Menu</h2>
+                    <div id="detail">
+                        <div id="name">
+                            <h2>
+                                Contact Us
+                            </h2>
+                        </div>
+                        <br>
+                        <table border="2" style="border-radius: 10px;">
+                            <tr>
+                                <td>
+                                    <label for="username">Username: </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="username">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email: </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="mess">Message: </label>
+                                </td>
+                                <td>
+                                    <textarea name="" id="mess" cols="35" rows="5"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <a href="#link" class="btn btn-success " role="button" onclick="loginMed()">Sign in</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <footer>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>&copy; 2023 Your Website. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </footer>
+    </body>
+</html>
